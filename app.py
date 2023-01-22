@@ -1,4 +1,4 @@
-a=169
-b=9
+a=16
+b=989
 print(a+b)
 # i love u
