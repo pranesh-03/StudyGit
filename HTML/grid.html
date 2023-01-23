@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <title>Grid practice</title>
+</head>
+<body style ="padding-bottom:1000px ;">
+    <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 100px 200px;">
+        <div style="background-color:lightblue">
+            div1
+            <p>tetx</p>
+        </div>
+        <div style="background-color:lightpink">
+            div2
+        </div>
+        <div style="background-color:lightblue">
+            div3
+        </div>
+        <div style="background-color: lightblue;">
+        div4</div>
+    </div>
+    <div style="
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 100px 1fr 1fr 1fr ;">   
+    <!-- fr=freespae occupies remaining spaces -->
+        <div style="background-color:lightblue">
+            div1
+        </div>
+        <div style="background-color:lightpink; width:100px">
+            div2
+        </div>
+        <div style="background-color:lightblue">
+            div3
+        </div>
+        <div style="background-color: lightpink;">
+        div4</div>
+    </div>
+
+</div>
+<div style="
+margin-top: 30px;
+display: grid;
+grid-template-columns: 100px 1fr 1fr 1fr ;
+column-gap: 10px;
+row-gap: 14px;">   
+<!-- fr=freespae occupies remaining spaces -->
+    <div style="background-color:lightblue ">
+        div1 
+    </div>
+    <div style="height:200px;background-color:lightpink; width:100px">
+        div2
+    </div>
+    <div style="height:200px;background-color:lightblue">
+        div3
+    </div>
+    <div style="height:200px;background-color: lightpink;">
+    div4</div>
+    <div style="background-color:lightpink">
+        div1   
+    </div>
+    <div style="height:200px;background-color:lightblue">
+        div2
+    </div>
+    <div style="height:200px;background-color:lightpink">
+        div3
+    </div>
+    <div style="height:200px;background-color: lightblue;">
+    div4</div>
+</div>
+</body>
+</html>
