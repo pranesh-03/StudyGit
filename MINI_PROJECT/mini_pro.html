@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<head>
+
+    <style>
+
+h1{
+    font-family:'Times New Roman', Times, serif;
+    color: rgb(255, 255, 255);
+    font-size:20px;
+    font-style: italic;
+    line-height: 20px;
+    
+}
+
+.col {
+    padding: 20px;
+} 
+
+.kbd:hover {
+    color: aqua;
+    cursor: pointer;
+}
+.flip-card {
+  background-color:transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+  display: inline-block;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+ .flip-card:hover .flip-card-inner {
+  transform: rotateY(140deg);
+  cursor: pointer;
+ }
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color:transparent;
+  color: black;
+}
+
+.flip-card-back {
+  background-color:transparent;
+  transform: rotateY(180deg);
+}
+#videoBG {
+    position:fixed;
+    z-index: -1;
+}
+#videoBG {
+    position:fixed;
+    z-index: -1;
+    width:100%;     
+    height: auto;
+}
+@media (min-aspect-ratio: 16/9) {
+    #videoBG {
+        width:100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9) {
+    #videoBG { 
+        width:auto;
+        height: 100%;
+    }
+}
+@media (max-width: 767px) {
+    #videoBG {
+        display: none;
+    }
+    body {
+        background: url('images/production\ ID_3873465.mp4');
+        background-size: cover;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Anmi{
+   margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+
+}
+.Anmii{
+   margin-top: 30px;
+   margin-left: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 10vh;
+}
+h2{
+   position: absolute;
+   font-size: 2vw;
+   color: #252839;
+   -webkit-text-stroke: 0.3vw #383d52;
+   text-transform: uppercase;
+   display: block;
+   
+   
+}
+h2::before{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: rgb(255, 0, 0);
+    -webkit-text-stroke: 0vw #ab9d9d;
+    overflow: hidden;
+}
+
+    </style>
+
+    <title>MINI PROJECT</title>
+</head>
+
+<body>
+   <video id="videoBG" poster="poster.JPG" autoplay muted loop>
+    <source src="images/production ID_3873465.mp4" type="video/mp4">
+</video>
+
+<div class="Anmi"><h2  data-text="Historical Places in INDIA">Historical Places in INDIA</h2></div>
+
+    <div class="container text-center">
+        <div class="row">
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="img-thumbnail"  src="images/taj.jpg" alt="Avatar" >
+                      </div>
+                      <div class="flip-card-back">
+                        
+                        <h1>The Taj Mahal is an Islamic ivory-white marble mausoleum on the right bank of the river Yamuna in the Indian city of Agra. </h1> 
+                      </div>
+                    </div>
+                  </div>
+               <br>
+             
+                <a href="https://en.wikipedia.org/wiki/Taj_Mahal" target="_blank" class="text-decoration-none"> <kbd
+                        class="kbd">Taj
+                        Mahal</kbd></a>
+            </div><br><br>
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="img-thumbnail"  src="images/amr.webp" alt="Avatar" >
+                      </div>
+                      <div class="flip-card-back">
+                        
+                        <h1>Amer Fort or Amber Fort is a fort located in Amer, Rajasthan, India. Amer is a town with an area of 4 square kilometres (1.5 sq mi)[1] located 11 kilometres (6.8 mi) from Jaipur, the capital of Rajasthan</h1> 
+
+                        
+                      </div>
+                    </div>
+                  </div>
+               <br>
+             
+                <a href="https://en.wikipedia.org/wiki/Amber_Fort" target="_blank" class="text-decoration-none">
+                    <kbd class="kbd">Amber Fort</kbd></a>
+            </div>
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="img-thumbnail"  src="images/maha.jpg" alt="Avatar" >
+                      </div>
+                      <div class="flip-card-back">
+                        
+                        <h1>Mamallapuram, also known as Mahabalipuram, is a town in Chengalpattu district in the southeastern Indian state of Tamil Nadu, best known for the UNESCO World Heritage Site of 7th- and 8th-century Hindu Group of Monuments at Mahabalipuram.  </h1> 
+
+                        
+                      </div>
+                    </div>
+                  </div>
+               <br>
+             
+                <a href="https://en.wikipedia.org/wiki/Mamallapuram" target="_blank" class="text-decoration-none">
+                    <kbd class="kbd">Mamallapuram</kbd></a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="img-thumbnail"  src="images/minar.jpg" alt="Avatar" >
+                      </div>
+                      <div class="flip-card-back">
+                        
+                        <h1>The Qutb Minar, also spelled Qutub Minar and Qutab Minar, is a minaret and "victory tower" that forms part of the Qutb complex, which lies at the site of Delhi’s oldest fortified city, Lal Kot, founded by the Tomar Rajputs </h1> 
+
+                        
+                      </div>
+                    </div>
+                  </div>
+               <br>
+               
+                <a href="https://en.wikipedia.org/wiki/Qutb_Minar" target="_blank" class="text-decoration-none"> <kbd
+                        class="kbd"> Qutub Minar</kbd></a>
+            </div>
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="img-thumbnail"  src="images/gold.webp" alt="Avatar" >
+                      </div>
+                      <div class="flip-card-back">
+                        
+                        <h1>Jallianwala Bagh is a historic garden and ‘memorial of national importance’ close to the Golden Temple complex in Amritsar, Punjab, India, preserved in the memory of those wounded and killed in the Jallianwala Bagh Massacre that occurred on the site on the festival of Baisakhi, 13 April 1919.</h1> 
+
+                        
+                      </div>
+                    </div>
+                  </div>
+               <br>
+               
+                <a href="https://en.wikipedia.org/wiki/Jallianwala Bagh" target="_blank" class="text-decoration-none">
+                    <kbd class="kbd">Jallianwala Bagh</kbd></a>
+            </div>
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="img-thumbnail"  src="images/aja.jpg" alt="Avatar" >
+                      </div>
+                      <div class="flip-card-back">
+                        
+                        <h1>Ellora is a UNESCO World Heritage Site located in the Aurangabad district of Maharashtra, India. It is one of the largest rock-cut Hindu temple cave complexes in the world, with artwork dating from the period 600–1000 CE</h1> 
+
+                        
+                      </div>
+                    </div>
+                  </div>
+               <br>
+               
+                <a href="https://en.wikipedia.org/wiki/Ellora_Caves" target="_blank" class="text-decoration-none"> <kbd
+                        class="kbd">
+                        Ajanta & Ellora Caves</kbd></a><br>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="img-thumbnail"  src="images/vic.webp" alt="Avatar" >
+                      </div>
+                      <div class="flip-card-back">
+                        
+                        <h1>The Victoria Theatre and Concert Hall is a performing arts centre in the Central Area of Singapore, situated along Empress Place.It is a complex of two buildings and a clock tower joined together by a common corridor; the oldest part of the building was first built in 1862, and the complex was completed in 1909. </h1> 
+
+                        
+                      </div>
+                    </div>
+                  </div>
+               <br>
+               
+                <a href="https://en.wikipedia.org/wiki/Victoria Memorial Hall" target="_blank" class="text-decoration-none">
+                    <kbd class="kbd">Victoria Memorial Hall</kbd></a><br>
+            </div>
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="img-thumbnail"  src="images/kha.jpg" alt="Avatar" >
+                      </div>
+                      <div class="flip-card-back">
+                        
+                        <h1>Thanjavur , also Tanjore is a city in the Indian state of Tamil Nadu. Thanjavur is the 11th biggest city in Tamil Nadu.  Thanjavur is an important center of South Indian religion, art, and architecture. </h1> 
+
+                        
+                      </div>
+                    </div>
+                  </div>
+               <br>
+             
+                <a href="https://en.wikipedia.org/wiki/Thanjavur" target="_blank" class="text-decoration-none">
+                    <kbd class="kbd">Thanjavur</kbd></a><br>
+            </div>
+            <br>
+            <div class="col">
+                <div class="flip-card">
+                    <div class="flip-card-inner">
+                      <div class="flip-card-front">
+                        <img class="img-thumbnail"  src="images/mysi.webp" alt="Avatar" >
+                      </div>
+                      <div class="flip-card-back">
+                        
+                        <h1>The Mysore Palace, also known as Amba Vilas Palace, is a historical palace and a royal residence (house).It used to be the official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore.</h1> 
+
+                        
+                      </div>
+                    </div>
+                  </div>
+               <br>
+               
+                <a href="https://en.wikipedia.org/wiki/Mysore_Palace" target="_blank" class="text-decoration-none">
+                    <kbd class="kbd">Mysore Palace</kbd></a>
+                
+            </div>
+            
+<div  class="col-lg-12">
+    <BR>
+        <footer>
+        <div class="Anmii"><h2 data-text="Designed and developed by PRANESH">Designed and developed by PRANESH</h2></div></footer>
+</div>
+
+</body>
+
+</div>
+
+</html>
